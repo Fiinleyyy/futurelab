@@ -5,13 +5,15 @@
     <title>Future Lab Website Dezember 2022 Student Finley Hogan</title>
   </head>
   <body>
-    <h1>Data Service Manager</h1>
-    <p><input type="file" accept=".xml"></input>
-    <p>
-      <button type="button">Convert to CSV</button>
-      <button type="button">Convert to JSON</button>
-      <button type="button">Datenbanken</button>
-    </p>
-    <p><button type="button">Download</button></p>
+	<form action="/convert_xml" method="POST" enctype="multipart/form-data">
+		<h1>Data Service Manager</h1>
+		<p><input type="file" accept=".xml"></input>
+		<p>
+		  <button type="button">Convert to CSV</button>
+		  <button type="button">Convert to JSON</button>
+		  <button type="button">Datenbanken</button>
+		</p>
+		<p><button type="button">Download</button></p>
+	</form>
   </body>
 </html>
